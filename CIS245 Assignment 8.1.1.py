@@ -9,8 +9,9 @@ def get_user_dir():
             print("Your directory exists.")
             break
         else:
-            print("The directory you entered doesnt exist. "
-                  "Please enter a different directory name.")
+            os.mkdir(user_dir)
+            break
+          
     return user_dir
 
 def get_file_name():
